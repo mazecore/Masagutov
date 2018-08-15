@@ -1,0 +1,576 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+
+body, html{
+	height: 100%;
+	width:100%;
+}
+body{
+	font-size: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/* ========== Universal Stylings ========== */
+h5{
+	
+	font-family: 'Montserrat', sans-serif;
+	line-height: 40px;
+	margin-top: 4rem;
+	text-shadow: 1px 1px 40px rgba(0, 0, 0, 0.473);
+}
+h1,h2,h4,h3{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 50px;
+	text-shadow: 1px 1px 40px rgba(0, 0, 0, 0.473);
+}
+.bg-primary{
+	background-color: rgb(219, 137, 43)!important;
+}
+.bg-dark{
+	background: linear-gradient(160deg, #04244e, #157c7c )!important;
+}
+/*   #0d376e  solid version */
+
+
+
+.text-inverse{
+	color: #074052;
+}
+.text-primary{
+	color: #B47F41!important;
+}
+a.text-primary{
+	color: #B47F41;
+}
+a.text-primary:hover{
+	color: #916634!important;
+	text-decoration: none;
+}
+.btn{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	
+}
+.btn-primary{
+	background-color: #B47F41;
+	border-color: #B47F41;
+}
+.btn-primary:hover,.btn-primary:focus{
+	background-color: #916634;
+	border-color: #916634;
+}
+.btn-capsul{
+	border-radius: 50px;
+}
+i.box-circle-outline{
+	border-color: inherit;
+	border-width: 1px;
+	border-style:solid;
+	border-radius: 50%;
+	height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.text-underline-white:before{
+	content:"";
+	position: absolute;
+	width:100px;
+	height: 4px;
+	left:50%;
+	margin-left:-50px;
+	background:#fff;
+	bottom: -15px;
+	border-radius: 10px;
+}
+.text-underline-rb-white:before{
+	content:"";
+	position: absolute;
+	width:100px;
+	height: 4px;
+	left:0;
+	background:#fff;
+	bottom: -15px;
+	border-radius: 10px;
+}
+.text-underline-primary:before{
+	content:"";
+	position: absolute;
+	width:50px;
+	height: 4px;
+	left:50%;
+	margin-left:-25px;
+	background:#35CBDF;
+	bottom: -15px;
+	border-radius: 10px;
+}
+.text-underline-rb-primary:before{
+	content:"";
+	position: absolute;
+	width:100px;
+	height: 4px;
+	left:0;
+	background:#35CBDF;
+	bottom: -15px;
+	border-radius: 10px;
+}
+.bg-overlay:before{
+	content:"";
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+	height: 100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index: -1;
+}
+.bg-overlay-primary:before{
+	content:"";
+	background:rgba(49,31,10,0.5);
+	position: absolute;
+	height: 100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index: -1;
+}
+.bg-right{
+	background:url("../img/sec-bg-01.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.sec-bg-03{
+	background:url("../img/avi-richards-183715-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;	
+	background-size: cover;
+}
+#resume{
+	background:url("../img/pexels-photo.jpeg");
+	background-repeat: no-repeat;
+	background-position: top left;	
+	background-size: cover;
+}
+
+.parallax{
+	background-attachment: fixed!important;
+}
+
+
+/* ========== Page Loading Style ========== */
+.loaders {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .loaders .loader {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 1 auto;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 25%;
+      max-width: 25%;
+      height: 200px;
+      align-items: center;
+      justify-content: center;
+  }
+  .loader{display: table;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1200;
+  }
+
+.loader-bg{
+  background: #0F0A06;
+}
+
+.loader-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+/* ========== Top Navigation ========== */
+.top-nav {
+    height: 80px;
+    transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+}
+.top-nav .navbar-nav li .nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding:6px 26px;
+    margin:6px 5px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+}
+.top-nav li a.nav-link:hover, .top-nav .nav-item.active a.nav-link{
+    color: #fff;
+    background-color: #B47F41;
+	border-color: #B47F41;
+	border-radius: 50px;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.top-nav .navbar-brand{
+	font-size: 28px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+.top-nav .search-box li a.nav-link{
+	border:1px solid #B47F41;
+	padding: 6px 15px;
+}
+.top-nav.light-header{
+	height: 60px;
+	background: rgba(0,0,0,0.6);
+	box-shadow: 0 0 10px rgba(0,0,0,0.23);
+	transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	z-index: 9999;
+}
+.top-nav.light-header .navbar-brand{
+	color: #fff;
+}
+
+.top-nav.light-header .search-box li a.nav-link{
+	padding: 6px 15px;
+	border:1px solid #fff;
+}
+.top-nav.light-header .search-box li a.nav-link i{
+	color:#fff!important;
+}
+
+/* ========== Intro Header ========== */
+.intro{
+	float: left;
+	width:100%;
+	display: flex;
+	align-items:center;
+	height:100%;
+	position: relative;
+	z-index: 1;
+}
+.intro.intro-small{
+	height: 60%;
+}
+.intro-bg{
+	background:url("../img/intro-bg-01.jpg");
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size:cover;
+}
+.caption-container{
+	width:50rem;
+	margin:0 auto;
+}
+.caption-two-panel{
+	display: flex;
+	align-items:center;
+}
+.intro h1{
+	font-weight: 700;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 3.8rem;
+}
+.intro-caption .btn i{
+	float: left;
+	margin-right:15px;
+}
+
+
+/* ========== Portfolio ================================================================ */
+.font-abril{
+	font-family: 'Abril Fatface';
+	text-align: center;
+	font-size: 4rem;
+}
+
+#portfolio {
+	float: left;
+	width:100%;
+	padding:3rem 0;
+	position: relative;
+	z-index: 1;
+}
+
+.row{
+	margin:0;
+}
+.cardPort {
+	margin: 7rem;
+	width: 40rem;
+	background-color: #07415200;
+	
+	border: none;
+	text-align: center;
+  }
+
+.logos {
+	text-align: center;
+	margin: 0em 1em 0em 0em;
+}
+
+.logoId {
+	height: 4rem;
+	margin: 0rem 1rem 0rem 1rem; 
+}
+
+.logoId:hover,.logoMDB:hover,.logoNPM:hover,.logoAng:hover{
+	opacity: 0.5;
+	transform: scale(1.05);
+	transition: all 0.3s ease;
+}
+.logoAng {
+	width: 10rem;
+}
+.logoNPM {
+	width: 6rem;
+	margin-right: 1rem;
+}
+.logoMDB {
+	width: 16rem;
+}
+
+.roundedImage{
+	box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.473);
+}
+.roundedImage:hover{
+	opacity: 0.85;
+	transition: 0.3s ease-in-out;
+}
+
+.certif{
+  margin: 4rem 2rem 3rem 8rem;
+} 
+
+.logoCert {
+	width: 22rem;
+}
+
+.zoom {
+	margin: 2rem;
+}
+
+.zoom:hover{
+	z-index: 5;
+	box-shadow: 1px 1px 40px rgb(0, 0, 0);
+	transform: scale(1.8);
+	transition: 0.5s ease-in-out;
+}
+
+.info-section{
+	float: left;
+	width:100%;
+	padding:5rem 0;
+	position: relative;
+	z-index: 1;
+}
+.info-section h2{
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+
+
+
+.info-section .service-block-bg{
+	background-color: rgba(180,127,65,0.4);
+}
+.info-section .service-block-bg:hover{
+	background-color: rgba(180,127,65,1);
+}
+
+.info-section h3{
+	font-size: 1.4rem;
+}
+.info-section p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.info-section .box h2{
+    font-size:24px;
+    margin-bottom:20px;
+    margin-top:0;
+}
+
+.info-section .box i{
+    font-size:20px;
+}
+.info-section .box{
+    display:flex;
+}
+.info-section .text-box{
+    flex:1 1 0;
+    text-align:left;
+}
+.info-section .icon-box{
+    line-height: 1.2;
+    width:70px;
+}
+.info-section .service-block-overlay{
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+.info-section .service-block-overlay:hover{
+	
+    border-radius: 5px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-top: -10px;
+    position: relative;
+    width: 100%;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+.info-section .service-block i img{
+	height:100px;
+	display: flex;
+}
+
+.content-half ul{
+    padding:0;
+    list-style:none;
+}
+.content-half ul li{
+    margin:15px 0;
+    float:left;
+    width:100%;
+}
+.content-half ul li i{
+    float:left;
+    font-size:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.content-half ul li .list-content{
+    float:left;
+    margin-left:20px;
+}
+.content-half ul li strong{
+    font-size:19px;
+    font-weight:700;
+}
+.content-half .btn{
+    margin-top:20px;
+}
+
+
+
+
+
+/* ========== Resume Section ========== */
+.resume-section{
+	float: left;
+	width:100%;
+	position: relative;
+	z-index: 5;
+}
+.resume-section h2{
+	font-size: 3rem;
+}
+.resume-section .single-testimonial {
+    margin: 0 15%;
+    width: 70%;
+}
+
+
+
+
+
+
+/* ========== Footer Section ========== */
+.footer-section{
+	float: left;
+	width:100%;
+	position: relative;
+	z-index: 1;
+}
+.footer-section .list-box img {
+    width: 70px;
+}
+.footer-section .list-box a.title{
+	font-size: 14px;
+	line-height: 0;
+}
+.footer-section .copy-text{
+	font-size: 12px;
+	border-top: 1px solid #555;
+}
+
+
+
+/* ========== Contact Section ========== */
+.contact-section{
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+.formContainer {
+	margin-top: 13rem;
+}
+
+.btn-capsul{
+	float: right;
+}
+.contact-section .form-control{
+	border-radius: 0;
+}
+.contact-section #map{
+	height: 100vh;
+	width:100%;
+	position: absolute;
+	opacity: 0.3;
+}
+.contact-section .form-control:focus{
+	border-color: #B47F41;
+}
+.contact-section .form-sec{
+	box-shadow: 0 0 200px rgba(0, 13, 49, 0.8);
+}
+/* ========== Copy Footer Styles ========== */
+.copy-footer{
+	float: left;
+	width:100%;
+	font-size: 14px;
+	margin: 14.6rem 0 0 0;
+}
+
+.mb-4 {
+	text-align: center;
+}
+
+
+.copy-footer a{
+	color: #fff;
+}
+.copy-footer a:hover{
+	text-decoration: underline;
+}
+
