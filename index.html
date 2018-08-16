@@ -10,7 +10,13 @@
 <body>
 
 <!-- Page loading animation -->
-
+<div class="loader loader-bg">
+	<div class="loader-inner ball-pulse">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
 
 <!-- Top navigation -->
 <nav class="navbar navbar-expand-md fixed-top top-nav">
@@ -48,7 +54,7 @@
 			<div class="col-lg-6 col-md-12 caption-two-panel ml-auto pt-5">
 				<div class="intro-caption mt-5">
 				<h1 class="text-white mb-2">Ildar Masagutov</h1>
-				<p class="text-white mb-4"> A fullstack Angular/JavaScript developer.</p>
+				<p class="text-white mb-4"> Angular/JavaScript developer.</p>
 				<a class="btn btn-primary text-white mr-3" href="#portfolio">Explore More</a>
 			</div>
 		</div>
@@ -60,7 +66,7 @@
 		
   <div class="row" >
 				<div class="card cardPort">
-						<h2 class="font-abril text-white">Current project</h2>
+						<h2 class="font-abril text-white curWork">Current project</h2>
 						<h5 class="text-primary">
 								This is an <strong>Angular</strong> fullstack project I'm currently working on. <br>
 								I created a website for an artist, where he can register, <br>log in, add new art, and also update the old posts.<br> 
@@ -77,20 +83,55 @@
 				 <div class="logos" >
 						<img class="logoNPM" src="img/icons/800px-Npm-logo.svg.png">
 						<img class="logoId" src="img/icons/NodeJs.png">
-						<img class="logoId" src="img/icons/Expressjs.png">
+						<img class="logoId" src="img/icons/2000px-AmazonWebservices_Logo.svg.png">
 						
 						<img class="logoId" src="img/icons/bootstrap-stack.png">
 						<img class="logoMDB" src="img/icons/mongodb.png">
 						<img class="logoAng" src="img/icons/Angular.png">
+						<img class="logoId" src="img/icons/type.png">
 						<img class="logoId" src="img/icons/Git-Logo-2Color.png">
 						<img class="logoId" src="img/icons/css3.png">
 						<img class="logoId" src="img/icons/html5.png">
-						<img class="logoId" src="img/icons/type.png">
+						
 						<img class="logoId" src="img/icons/photoshop.png">
-						<img class="logoId" src="img/icons/2000px-Python-logo-notext.svg.png">
+						
 				 </div>
 </section>
+<section id="portfolio" class="bg-dark">
+		
+	<div class="row cards2" >
+				  
+				  <div class="card cardPort roundedImage">
+						   <a href="http://enlightenedlittlesouls.com/">
+								  <img class="card-img" src="img/ELS.JPG" alt="Image">
+						   </a>
+				  </div>	
+				  <div class="card cardPort">
+					<h2 class="font-abril text-white prevWork">Previous work</h2>
+					<h5 class="text-primary">
+							One of the previous projects I worked on at ELS inc. <br>
+							Was responsible for the animation and content on the webpage.
+					</h5>
+			</div>				
+	  </div>
+				   <div class="logos" >
+						  
+						 
+						
+						  
+						  <img class="logoId" src="img/icons/bootstrap-stack.png">
 
+						  <img class="logoId" src="img/icons/css3.png">
+						  <img class="logoId" src="img/icons/html5.png">
+						  <img class="logoId" src="img/icons/2000px-PHP-logo.svg.png">
+						  <img class="logoId" src="img/icons/logo.png">
+						  <img class="logoId" src="img/icons/WordPress-logotype-wmark.png">
+						  <img class="logoId" src="img/icons/photoshop.png">
+						  <img class="logoId" src="img/icons/2000px-AmazonWebservices_Logo.svg.png">
+						  <img class="logoId" src="img/icons/unnamed.jpg">
+				   </div>
+  </section>
+  
 
 <!-- Certificates -->
 
@@ -169,7 +210,7 @@
 </section>
 
 <!-- Contact Block -->
-<section id="contact" class="contact-section h-100 bg-dark">
+<section id="contact" class="contact-section bg-dark">
 	<div id="map" class="bg-overlay"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56081.43732133415!2d-81.
 		41565055381871!3d28.537019458958113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1534321437241" 
 		width="1900" height="938" frameborder="0" style="border:0" allowfullscreen></iframe></div>
@@ -218,12 +259,14 @@
 				  </div>
 			  </form>
 			</div>
+			
 	</div>
-	<div class="copy-footer bg-primary">
-			<div class="container text-center text-light">
-				&copy;Masagutov<span id="year"></span>. All rights reserved.
-			</div>
+	
+	<div class="copy-footer py-2">
+		<div class="container foterText text-center text-light">
+			&copy; <span>Ildar Masagutov</span> <span id="year"></span>. All rights reserved.
 		</div>
+	</div>
 </section>
 
 <!-- footer Block -->
@@ -233,10 +276,13 @@
 
 
 <!-- Javascript Files  -->
-<script  src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" ></script>
 
 
 <script src="js/core.js"></script>
 </body>
 </html>
+
+
