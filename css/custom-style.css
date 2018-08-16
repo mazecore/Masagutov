@@ -586,22 +586,11 @@ i.box-circle-outline{
 	float: left;
 	width:100%;
 	font-size: 14px;
-<<<<<<< HEAD
 	margin: 16.5rem 0 0 0;
 	background-color: rgb(143, 76, 0);
 }
 
 .footerText {
     text-shadow: 0 0 200px rgb(0, 0, 0);
-=======
-	margin: 14.6rem 0 0 0;
-}
-
-.copy-footer a{
-	color: #fff;
-}
-.copy-footer a:hover{
-	text-decoration: underline;
->>>>>>> e6e33465a77cc57ba3e98611a5fa52fe8e3ec7a6
 }
 
