@@ -343,7 +343,11 @@ i.box-circle-outline{
 	margin: 0rem 1rem 0rem 1rem; 
 }
 
-.logoId:hover,.logoMDB:hover,.logoNPM:hover,.logoAng:hover{
+.logoExp {
+	height: 9rem;
+}
+
+.logoId:hover,.logoMDB:hover,.logoNPM:hover,.logoAng:hover,.logoExp:hover{
 	opacity: 0.5;
 	transform: scale(1.05);
 	transition: all 0.3s ease;
