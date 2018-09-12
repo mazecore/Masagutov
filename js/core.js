@@ -39,3 +39,16 @@ var theYear = new Date().getFullYear();
 $('#year').html(theYear);
 });
 
+//Portfolio cards animation
+$(".roundedImage").mouseover(function(){
+    $(this).css({"transform":"scale(1.02)", 
+                            "opacity":"1",
+                            "box-shadow": "0px 20px 200px rgba(27, 26, 48, 0.747)",
+                            "transition":"all 0.3s"});
+});
+$(".roundedImage").mouseout(function(){
+    $(this).css({"transform":"scale(1.00)", 
+                             "opacity":"0.85", 
+                             "box-shadow": "1px 1px 40px rgba(0, 0, 0, 0.473)",
+                             "transition":"all 0.3s"});
+});
