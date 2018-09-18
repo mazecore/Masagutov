@@ -331,10 +331,24 @@ i.box-circle-outline{
 	text-align: center;
   }
 
+.cardPort2 {
+	margin: 4rem 7rem;
+	width: 40rem;
+	background-color: #94b1d36b;
+	
+	border: none;
+	text-align: center;
+}
 .cards2 {
 	margin: 0rem 0rem 0rem 4rem;
 }
 
+p {
+	padding: 1rem;
+}
+.p_margin {
+	margin-top: 1rem;
+}
 .logos {
 	text-align: center;
 	margin: 0em 1em 0em 0em;
@@ -380,7 +394,7 @@ i.box-circle-outline{
 
 
 .prevWork{
-	margin-top: 6rem;
+	margin-top: 1rem;
 }
 .certif{
   margin: 4rem 2rem 3rem 8rem;
