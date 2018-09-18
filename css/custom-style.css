@@ -58,6 +58,7 @@ a.text-primary:hover{
 	font-size: 1rem;
 	font-weight: 600;
 	
+	
 }
 .btn-primary{
 	background-color: #B47F41;
@@ -66,6 +67,7 @@ a.text-primary:hover{
 .btn-primary:hover,.btn-primary:focus{
 	background-color: #916634;
 	border-color: #916634;
+	outline: none;
 }
 .btn-capsul{
 	border-radius: 50px;
@@ -347,7 +349,7 @@ i.box-circle-outline{
 	padding: 1rem;
 }
 .p_margin {
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 .logos {
 	text-align: center;
