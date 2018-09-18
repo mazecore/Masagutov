@@ -343,7 +343,7 @@ i.box-circle-outline{
 	margin: 0rem 0rem 0rem 4rem;
 }
 
-p {
+.p_noMargin {
 	padding: 1rem;
 }
 .p_margin {
