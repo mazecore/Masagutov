@@ -218,58 +218,58 @@
 	
 </section>
 <!-- Contact Block -->
-<section id="contact" class="contact-section bg-dark">
+<section id="contact" class="contact-section bg-dark h-100">
 	<div id="map" class="bg-overlay"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56081.43732133415!2d-81.
 		41565055381871!3d28.537019458958113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1534321437241" 
 		width="1900" height="938" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 	<div class="container formContainer">
 		<div class="col-lg-8 col-md-6 col-sm-10 form-sec bg-white my-5 p-5 mx-auto">
 				<form>
+					 
 				  <h2 class="mb-4">Contact</h2>
+				           <!-- Page loading animation -->
+					 <div class="loader2">
+							<div class="loader-inner ball-pulse">
+							  <div></div>
+							  <div></div>
+							  <div></div>
+							</div>
+						  </div>
+
 				  <div class="row">
-				  	<div class="col-md-6">
+				  	<div class="col-md-12">
 						<div class="form-group">
-							<label class="sr-only" for="formGroupExampleInput">Full Name</label>
-							<input class="form-control" id="formGroupExampleInput" placeholder="Full Name" onfocus="this.placeholder=''" onblur="this.placeholder='Full Name'" type="text">
+							<label class="sr-only" for="ContactName">Name</label>
+							<input class="form-control" id="ContactName" name="nameA" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'" type="text">
 						</div>
 				  	</div>
-				  	<div class="col-md-6">
-						<div class="form-group">
-							<label class="sr-only" for="formGroupExampleInput2">Phone Number</label>
-							<input class="form-control" id="formGroupExampleInput2" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'" type="text">
-						</div>		
-				  	</div>
+				  	
 				  </div>
 				  <div class="row">
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<div class="form-group">
-							<label class="sr-only" for="formGroupExampleInput2">Email Address</label>
-							<input class="form-control" id="formGroupExampleInput2" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'" type="email">
+							<label class="sr-only" for="ContactEmail">Email Address</label>
+							<input class="form-control" id="ContactEmail" placeholder="Email Address"  name="emailA" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'" type="email">
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class="sr-only" for="formGroupExampleInput2">Address</label>
-							<input class="form-control" id="formGroupExampleInput2" placeholder="Enter Address" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Address'" type="email">
-						</div>
-					</div>
+					
 				  </div>
 				  <div class="row">
 				  	<div class="col-md-12">
 						<div class="form-group">
-							<label class="sr-only" for="formGroupExampleInput2">Message</label>
-							<textarea class="form-control" placeholder="Enter your message here!" rows="4" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your message here!'"></textarea>
+							<label class="sr-only" for="ContactMessage">Message</label>
+							<textarea class="form-control" id="ContactMessage" placeholder="Your message."  name="messageA" rows="4" onfocus="this.placeholder=''" onblur="this.placeholder='Your message.'"></textarea>
 						</div>
 						<div class="form-group">
-							<button class="btn btn-primary btn-capsul px-4">Submit</button>
+							<button class="btn btn-primary btn-capsul px-4 submitContact">Submit</button>
 						</div>		
 				  	</div>
-				  </div>
+				  </div>                                                                                                                                    
 			  </form>
 			</div>
-			
 	</div>
-	
+
+	<!-- footer Block -->
 	<div class="copy-footer py-2">
 		<div class="container foterText text-center text-light">
 			&copy; <span>Ildar Masagutov</span> <span id="year"></span>. All rights reserved.
@@ -277,8 +277,9 @@
 	</div>
 </section>
 
-<!-- footer Block -->
 
+
+<!-- model content --> 
 
 
 

@@ -561,6 +561,12 @@ i.box-circle-outline{
 
 
 /* ========== Contact Section ========== */
+
+.loader2 {
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+}
 .contact-section{
 	float: left;
 	width: 100%;
