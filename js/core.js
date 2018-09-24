@@ -55,10 +55,19 @@ $(".roundedImage").mouseout(function(){
 
 //Contact form logic----------------------------------------------------------------------------------------------------------------------->
 
+//This function completes and reveals the updated forms. The pulse stops.
+function CompleteLoad() {
+    $("form").css({"visibility": "visible","transition":"all 0.3s"});
+    $(".loader2").fadeOut("slow");
+}
 
 //Fires when submit button is clicked => form data is collected and sent to the server.
+
 $(".submitContact").click(function(e){
+    
+    //Prevents default "GET" method.
     e.preventDefault();
+
     //Loader balls pulsing while ajax call is executed, form tag contents are hidden.
     $("form").css("visibility", "hidden");
     $(".loader2").css("visibility", "visible");
@@ -86,8 +95,7 @@ $(".submitContact").click(function(e){
         $("form h2").html(`<h2>Thank you${contactName}!</h2> <h5>Your message has been sent.<br> Ildar will respond in a couple hours. NOT!</h5>
                            <br><h6>Sorry, working on it... Will be up and running shortly!</h6>`);
         //The updated form is visible again and the pulse stops.
-        $("form").css({"visibility": "visible","transition":"all 0.3s"});
-        $(".loader2").fadeOut("slow");
+        CompleteLoad();
      })
 
      // Code to run if the request fails; the raw request and
@@ -98,7 +106,6 @@ $(".submitContact").click(function(e){
        console.log( "Status: " + status );
        console.dir( xhr );
        //The updated form is visible again and the pulse stops.
-       $("form").css({"visibility": "visible","transition":"all 0.3s"});
-       $(".loader2").fadeOut("slow");
+       CompleteLoad();
      })
 });
