@@ -57,14 +57,16 @@ $(".roundedImage").mouseout(function(){
 
 //This function completes and reveals the updated forms. The pulse stops.
 function CompleteLoad() {
-    $("form").css({"visibility": "visible","transition":"all 0.3s"});
     $(".loader2").fadeOut("slow");
-}
+    $("form").css({"visibility": "visible","transition":"all 0.3s"});
+    }
+
+    
 
 //Fires when submit button is clicked => form data is collected and sent to the server.
 
 $(".submitContact").click(function(e){
-    
+
     //Prevents default "GET" method.
     e.preventDefault();
 
@@ -72,13 +74,22 @@ $(".submitContact").click(function(e){
     $("form").css("visibility", "hidden");
     $(".loader2").css("visibility", "visible");
     
+    //Collection of data.
     let formData = $("form").serializeArray();
     console.log(formData);
 
-    //Input fields are hidden.
+    //Name variable for personal response text.
+    let contactName = formData[0].value;
+    if (contactName) { contactName = ", " + contactName };
+
+    
     $("form h2").css({"margin-top":"11%","text-align":"center"});
     $("form").css("height","16.4em");
+
+    //Input fields are hidden.
     $(".form-group").hide();
+
+    //POST request to server.
     $.ajax({
         url:"http://localhost:3000/POST",
         data: formData,
@@ -90,8 +101,6 @@ $(".submitContact").click(function(e){
   // The response is passed to the function
     .done(function(json) {
         //Contact form name field input value is passed to construct the response message.
-        let contactName = formData[0].value;
-        if (contactName) { contactName = ", " + contactName };
         $("form h2").html(`<h2>Thank you${contactName}!</h2> <h5>Your message has been sent.<br> Ildar will respond in a couple hours. NOT!</h5>
                            <br><h6>Sorry, working on it... Will be up and running shortly!</h6>`);
         //The updated form is visible again and the pulse stops.
@@ -101,7 +110,7 @@ $(".submitContact").click(function(e){
      // Code to run if the request fails; the raw request and
      // status codes are passed to the function.
      .fail(function( xhr, status, errorThrown ) {
-       $("form h2").text("Sorry, working on it... Will be up and running shortly!");
+       $("form h2").html(`<h5>Sorry${contactName}, Ildar is still working on this part...<br> Will be up and running shortly!</h5>`);
        console.log( "Error: " + errorThrown );
        console.log( "Status: " + status );
        console.dir( xhr );
