@@ -63,6 +63,8 @@ $(".submitContact").click(function(e){
     $("form").css("visibility", "hidden");
     let formData = $("form").serializeArray();
     console.log(formData);
+    //Input fields are hidden.
+    $(".form-group").hide();
     $("form h2").css({"margin-top":"11%","text-align":"center"});
     $("form").css("height","16.4em");
     $.ajax({
@@ -79,8 +81,6 @@ $(".submitContact").click(function(e){
         if (contactName) { contactName = ", " + contactName };
         $("form h2").html(`<h2>Thank you${contactName}!</h2> <h5>Your message has been sent.<br> Ildar will respond in a couple hours. NOT!</h5>
                            <br><h6>Sorry, working on it... Will be up and running shortly!</h6>`);
-        //Input fields are hidden.
-        $(".form-group").hide();
      })
      // Code to run if the request fails; the raw request and
      // status codes are passed to the function.
