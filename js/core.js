@@ -84,7 +84,7 @@ $(".submitContact").click(function(e){
 
     
     $("form h2").css({"margin-top":"11%","text-align":"center"});
-    $("form").css("height","16.4em");
+    $("form").css("height","18em");
 
     //Input fields are hidden.
     $(".form-group").hide();
