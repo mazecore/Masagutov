@@ -110,11 +110,11 @@ $(".submitContact").click(function(e){
      // Code to run if the request fails; the raw request and
      // status codes are passed to the function.
      .fail(function( xhr, status, errorThrown ) {
-       $("form h2").html(`<h5>Sorry${contactName}, Ildar is still working on this part...<br> Will be up and running shortly!</h5>`);
-       console.log( "Error: " + errorThrown );
-       console.log( "Status: " + status );
-       console.dir( xhr );
-       //The updated form is visible again and the pulse stops.
-       CompleteLoad();
+        $("form h2").html(`<h5>Sorry${contactName}, Ildar is still working on this part...<br> Will be up and running shortly!</h5>`);
+        console.log( "Error: " + errorThrown );
+        console.log( "Status: " + status );
+        console.dir( xhr );
+        //The updated form is visible again and the pulse stops.
+        CompleteLoad();
      })
 });
